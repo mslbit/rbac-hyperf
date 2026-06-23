@@ -1,0 +1,53 @@
+{
+    "name": "maiscraft/rbac-hyperf",
+    "description": "Hyperf adapter for Maiscraft RBAC - JwtGuard, DatabaseUserProvider, Casbin adapter, AuthMiddleware",
+    "type": "library",
+    "license": "MIT",
+
+    "authors": [
+        {
+            "name": "MaisCraft Team",
+            "email": "team@mslbit.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "psr/http-message": "^2.0",
+        "psr/http-server-middleware": "^1.0",
+        "hyperf/framework": "^3.1",
+        "hyperf/di": "^3.1",
+        "hyperf/db-connection": "^3.1",
+        "hyperf/http-server": "^3.1",
+        "maiscraft/rbac": "dev-main",
+        "maiscraft/crypto": "dev-main",
+        "firebase/php-jwt": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Maiscraft\\RbacHyperf\\": "src/"
+        }
+    },
+    "extra": {
+        "hyperf": {
+            "config": "Maiscraft\\RbacHyperf\\ConfigProvider"
+        }
+    },
+    "keywords": [
+        "rbac",
+        "casbin",
+        "hyperf",
+        "jwt",
+        "auth",
+        "guard"
+    ],
+    "homepage": "https://github.com/mslbit/rbac-hyperf",
+    "support": {
+        "issues": "https://github.com/mslbit/rbac-hyperf/issues",
+        "source": "https://github.com/mslbit/rbac-hyperf"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    }
+}
